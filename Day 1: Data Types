@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int i = 4;
+    double d = 4.0;
+    char s[] = "HackerRank ";
+
+    
+    // Declare second integer, double, and String variables.
+    int  S;
+    double S2;
+    char c[100];
+
+    scanf("%d%lf%*[\n] %[^\n]",&S,&S2,&c);
+    printf("%d\n%.01lf",i+S,S2+d);
+    printf("\n%s%s",s,c);
+    // Concatenate and print the String variables on a new line
+    // The 's' variable above should be printed first.
+
+    return 0;
+}
