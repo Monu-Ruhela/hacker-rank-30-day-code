@@ -1,0 +1,9 @@
+// Complete the factorial function below.
+int factorial(int n) 
+{
+    int fact=n;
+    if(n>=1)
+        return fact=fact * factorial(n-1);
+    else 
+        return 1;
+}
