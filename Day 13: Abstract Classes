@@ -1,0 +1,23 @@
+class book{
+    protected:
+        string title;
+        string author;
+    public:
+        book(string t,string a){
+            title=t;
+            author=a;
+        }
+        virtual void display()=0;
+
+};
+class MyBook : book{
+    private:
+    int price;
+    public:
+    MyBook(string t,string a,int price):book(t,a){
+        this->price = price;
+    }
+    void display(){
+        cout << "Title: " << title << endl << "Author: " << author << endl << "Price: " << price << endl;
+    }
+};
