@@ -1,0 +1,33 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+int main() 
+{
+    int n; 
+    scanf("%d",&n);
+
+    int Rem=0,count=0,max=0;
+
+
+    while(n > 0) 
+    {
+        Rem = n % 2;
+        if(Rem == 1)
+         {
+            count++;
+            if(count >= max)
+             {
+                max = count;
+            }
+        } 
+        else 
+        {
+            count = 0;
+        }
+        n = n / 2;
+    }
+
+    printf("%d\n", max);
+
+    return 0;
+}
